@@ -6,13 +6,11 @@ import javax.faces.context.FacesContext;
 import javax.faces.webapp.FacesServlet;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
 
 /**
  * 
  * @author Arjan Tijms
  */
-@WebListener
 public class MappingInit implements ServletContextListener {
     
     @Override

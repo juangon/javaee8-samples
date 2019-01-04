@@ -51,7 +51,8 @@ public class ExtensionlessMappingTest {
                 .addAsWebResource(new File("src/main/webapp/foo.xhtml"))
                 .addAsWebResource(new File("src/main/webapp/bar.xhtml"))
                 .addAsWebResource(new File("src/main/webapp/sub/bar.xhtml"), "/sub/bar.xhtml")
-                .addAsManifestResource("beans.xml");
+                .addAsWebInfResource("beans.xml")
+                .addAsWebInfResource(new File("src/main/webapp/WEB-INF/web.xml"));
         
         System.out.println("War to be deployed contains: \n" + war.toString(true));
         
